@@ -48,10 +48,11 @@ cursor = conn.cursor()
 cursor.execute('''CREATE TABLE lines (ID INTEGER PRIMARY KEY, name TEXT)''')
 cursor.execute('''CREATE TABLE diractions (ID INTEGER PRIMARY KEY, name TEXT)''')
 
-for line in linesNumbers[:10]:
+for line in linesNumbers:
     cursor.execute("INSERT INTO lines (name) VALUES ('%s')" % line)
     url = "http://m.ztm.waw.pl/rozklad_nowy.php?c=182&l=1&q=%s#content" % line
-    lines[line] = getParsedData(url, cursor.lastrowid, cursor)
+    #lines[line] = getParsedData(url, cursor.lastrowid, cursor)
+    lines[line] = getParsedData(url, cursor)
 
 conn.commit()
 conn.close()
