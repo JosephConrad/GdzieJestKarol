@@ -1,0 +1,25 @@
+{
+  "name": "Gdzie jest Karol?",
+  "version": "0.0.1",
+  "description": "Unique trivia about Warsaw public transport.",
+  "main": "Server/server.js",
+  "scripts": {
+    "start": "node Server/server.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x"
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JosephConrad/GdzieJestKarol"
+  },
+  "keywords": [
+    "node",
+    "trivia",
+    "express"
+  ],
+  "license": "MIT"
+}
