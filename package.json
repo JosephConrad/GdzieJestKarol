@@ -1,5 +1,5 @@
 {
-  "name": "Gdzie jest Karol?",
+  "name": "GdzieJestKarol",
   "version": "0.0.1",
   "description": "Unique trivia about Warsaw public transport.",
   "main": "Server/server.js",
