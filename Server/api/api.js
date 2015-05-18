@@ -2,7 +2,7 @@ var https          = require('https'),
     express        = require('express');
 
 var router = express.Router();
-var lines = require('../Scripts/lines.json');
+var lines = require('../scripts/lines.json');
 var linesKeys = Object.keys(lines);
 console.log(linesKeys)
 
